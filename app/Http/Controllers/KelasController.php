@@ -21,7 +21,7 @@ class KelasController extends Controller
             'wali_kelas' => $wali_kelas,
             'jumlah_siswa' => $jumlah_siswa,
         ];
-        return view('Kelas.index', compact('kelas', 'wali_kelas', 'jumlah_siswa', 'data'));
+        return view('kelas.index', compact('kelas', 'wali_kelas', 'jumlah_siswa', 'data'));
     }
 
     public function insert(Request $request)
