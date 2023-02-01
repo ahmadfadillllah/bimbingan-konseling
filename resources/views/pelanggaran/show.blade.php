@@ -61,12 +61,12 @@
                                     <span class="text-muted">Daftar Pelanggaran</span>
                                 </h4>
                                 <ul class="list-group mb-3">
-                                    @if ($detail_pelanggaran->isEmpty())
-                                        <h5>Tidak mempunyai pelanggaran/pelanggaran telah dihapus</h5>
-                                    @else
                                     @php
                                         $total = 0;
                                     @endphp
+                                    @if ($detail_pelanggaran->isEmpty())
+                                        <h5>Tidak mempunyai pelanggaran/pelanggaran telah dihapus</h5>
+                                    @else
                                     @foreach ($detail_pelanggaran as $dp)
                                     <li class="list-group-item d-flex justify-content-between lh-condensed">
                                         <div>
