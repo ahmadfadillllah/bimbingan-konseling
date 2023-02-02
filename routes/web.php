@@ -69,12 +69,11 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function(){
         $file = public_path('surat.rtf');
 
 		$array = array(
-            '[NAMA_WALI]' => $siswa->wali->name,
+            '[NO_SURAT]' => sprintf("%03d", $siswa->id),
 			'[NAMA_SISWA]' => $siswa->nama_lengkap,
             '[ALAMAT]' => $siswa->alamat,
 			'[HARI]' => Carbon::now()->addDays(1)->translatedFormat('l'),
-			'[TANGGAL]' => Carbon::now()->addDays(1)->translatedFormat('d F Y'),
-			'[TANGGAL_INI]' => Carbon::now()->translatedFormat('d F Y'),
+			'[TANGGAL]' => Carbon::now()->addDays(1)->format('d F Y'),
 		);
 
 		$nama_file = 'surat_BK_'.$siswa->nama_lengkap.'.doc';

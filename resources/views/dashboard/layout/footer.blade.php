@@ -22,34 +22,37 @@
 
 <!-- Daterangepicker -->
     <!-- momment js is must -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/moment/moment.min.js"></script>
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- clockpicker -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
-    <!-- asColorPicker -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/jquery-asColor/jquery-asColor.min.js"></script>
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
-    <!-- Material color picker -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
-    <!-- pickdate -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/pickadate/picker.js"></script>
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/pickadate/picker.time.js"></script>
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/pickadate/picker.date.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/moment/moment.min.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- clockpicker -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/clockpicker/js/bootstrap-clockpicker.min.js"></script>
+<!-- asColorPicker -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/jquery-asColor/jquery-asColor.min.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/jquery-asGradient/jquery-asGradient.min.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js"></script>
+<!-- Material color picker -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+<!-- pickdate -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/pickadate/picker.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/pickadate/picker.time.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/pickadate/picker.date.js"></script>
 
 
 
-    <!-- Daterangepicker -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/bs-daterange-picker-init.js"></script>
-    <!-- Clockpicker init -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/clock-picker-init.js"></script>
-    <!-- asColorPicker init -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/jquery-asColorPicker.init.js"></script>
-    <!-- Material color picker init -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/material-date-picker-init.js"></script>
-    <!-- Pickdate -->
-    <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/pickadate-init.js"></script>
+<!-- Daterangepicker -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/bs-daterange-picker-init.js"></script>
+<!-- Clockpicker init -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/clock-picker-init.js"></script>
+<!-- asColorPicker init -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/jquery-asColorPicker.init.js"></script>
+<!-- Material color picker init -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/material-date-picker-init.js"></script>
+<!-- Pickdate -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/pickadate-init.js"></script>
 
+<!-- Chart ChartJS plugin files -->
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/chart.js/Chart.bundle.min.js"></script>
+<script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/js/plugins-init/chartjs-init.js"></script>
 
 <!-- Apex Chart -->
 <script src="{{ asset('admin/dompet.dexignlab.com/xhtml') }}/vendor/apexchart/apexchart.js"></script>

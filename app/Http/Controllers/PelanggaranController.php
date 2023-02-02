@@ -30,27 +30,6 @@ class PelanggaranController extends Controller
         return view('pelanggaran.show', compact('siswa', 'kategori', 'pelanggaran', 'detail_pelanggaran', 'bobot'));
     }
 
-    public function download($id)
-    {
-        $pelanggaran = Pelanggaran::with('siswa')->where('id', $id)->first();
-        $siswa = Siswa::with('wali', 'kelas')->where('id', $pelanggaran->siswa_id)->first();
-        $detail_pelanggaran = DetailPelanggaran::with('siswa', 'kategori')->where('pelanggaran_id', $pelanggaran->id)->get();
-
-        $file = public_path('surat.rtf');
-
-		$array = array(
-			'[TANGGAL]' => date('d F Y'),
-			'[NAMA_WALI]' => $siswa->wali->name,
-			'[NAMA_SISWA]' => $siswa->nama,
-			'[HARI]' => Carbon::now()->addDays(1)->translatedFormat('l'),
-			'[TANGGAL]' => Carbon::now()->addDays(1)->format('d F Y'),
-		);
-
-		$nama_file = 'surat-keterangan-kerja.doc';
-
-		return WordTemplate::export($file, $array, $nama_file);
-    }
-
     public function insert(Request $request)
     {
         try {

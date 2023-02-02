@@ -14,6 +14,19 @@ class DashboardController extends Controller
         $kategori = KategoriPelanggaran::all();
         $pelanggaran = DetailPelanggaran::all();
         $siswa = Siswa::all();
-        return view('dashboard.index', compact('user', 'kategori', 'pelanggaran', 'siswa'));
+
+        $datakategori = KategoriPelanggaran::all()->count();
+        $datapelanggaran = DetailPelanggaran::all()->count();
+        $datauser = User::all()->count();
+        $datasiswa = Siswa::all()->count();
+
+        $dataDashboard = [
+            $datakategori,
+            $datapelanggaran,
+            $datauser,
+            $datasiswa
+        ];
+
+        return view('dashboard.index', compact('user', 'kategori', 'pelanggaran', 'siswa', 'dataDashboard'));
     }
 }
