@@ -35,7 +35,8 @@ use Carbon\Carbon;
 // });
 
 Route::get('/',[HomeController::class, 'index'])->name('home.index');
-Route::get('/contact',[HomeController::class, 'contact'])->name('home.contact');
+
+Route::post('/contact',[HomeController::class, 'contact'])->name('home.contact');
 
 Route::get('/login',[AuthController::class, 'login'])->name('login');
 Route::post('/login/post',[AuthController::class, 'login_post'])->name('login_post');

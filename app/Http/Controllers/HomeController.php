@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\BatasPoin;
 use App\Models\DetailPelanggaran;
 use App\Models\KategoriPelanggaran;
+use App\Models\Kontak;
 use App\Models\Siswa;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -25,8 +26,20 @@ class HomeController extends Controller
         return view('home.index', compact('user', 'kategori', 'pelanggaran', 'siswa', 'detail_pelanggaran', 'informasi'));
     }
 
-    public function contact()
+    public function contact(Request $request)
     {
-        return view('home.contact');
+        try {
+            Kontak::create([
+                'nama' => $request->name,
+                'email' => $request->email,
+                'no_hp' => $request->phone_number,
+                'subject' => $request->subject,
+                'pesan' => $request->message,
+            ]);
+
+            return redirect()->back()->with('success', 'Berhasil mengirimkan pesan');
+        } catch (\Throwable $th) {
+            return redirect()->back()->with('info', 'Gagal mengirimkan pesan');
+        }
     }
 }

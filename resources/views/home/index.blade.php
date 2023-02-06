@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{ asset('home/demo.dueza.com/spicy-html/spicy/black-color') }}/assets/css/style.css">
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="{{ asset('home/demo.dueza.com/spicy-html/spicy/black-color') }}/assets/css/responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
         </div>
     </div>
     <!-- / END PRELOADER -->
-
+    @include('notif.index')
     <!-- START HOMEPAGE DESIGN AREA -->
     <header id="home" class="welcome-area">
         <div class="header-top-area">
@@ -220,7 +221,8 @@
                 <div class="col-md-8">
                     <div class="contact-form">
                         <div class="row">
-                            <form action="https://demo.dueza.com/spicy-html/spicy/black-color/assets/php/contact.php" method="post">
+                            <form action="{{ route('home.contact') }}" method="post">
+                                @csrf
                                 <div class="form-group col-md-6">
                                     <p>Nama</p>
                                     <input type="text" name="name" class="form-control" id="first-name" required="required">
