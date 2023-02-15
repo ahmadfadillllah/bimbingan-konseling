@@ -54,7 +54,6 @@ class SiswaController extends Controller
                 'nama_lengkap' => $request->nama_lengkap,
                 'kelas_id' => $request->kelas_id,
                 'alamat' => $request->alamat,
-                'wali_id' => $request->wali_id,
                 'no_hp' => $request->no_hp,
                 'orang_tua' => $request->orang_tua,
                 'no_hp_orang_tua' => $request->no_hp_orang_tua,
