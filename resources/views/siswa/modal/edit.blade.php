@@ -35,7 +35,7 @@
                         </div>
                     </div>
                             <input type="text" class="form-control input-rounded" id="walii_Id"
-                                placeholder="Masukkan Alamat" name="wali_id" readonly hidden>
+                                placeholder="Masukkan Alamat" name="wali_id" readonly>
 
                     <div class="mb-3 col-md-12">
                         <label for="">Alamat</label>
