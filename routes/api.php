@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/siswa/show', [SiswaController::class, 'show_data'])->name('siswa.show_data');
+Route::get('/siswa/show1', [SiswaController::class, 'show1_data'])->name('siswa.show1_data');

@@ -83,7 +83,7 @@
                 headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
-				url: "{{ route('siswa.show_data') }}",
+				url: "{{ route('siswa.show1_data') }}",
 				method: "GET",
 				data: {kelas_id: kelas_id},
 				success: function(data){

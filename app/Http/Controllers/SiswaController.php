@@ -83,4 +83,10 @@ class SiswaController extends Controller
         $kelas = Kelas::where('id', $request->query('kelas_id'))->first();
         return response()->json($kelas, 200);
     }
+
+    public function show1_data(Request $request)
+    {
+        $kelas = Kelas::where('id', $request->query('kelas_id'))->first();
+        return response()->json($kelas, 200);
+    }
 }
