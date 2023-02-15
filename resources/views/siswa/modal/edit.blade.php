@@ -23,7 +23,7 @@
                             value="{{ $s->nama_lengkap }}" required>
                         </div>
                     </div>
-                    <div class="mb-3 col-md-12">
+                    {{-- <div class="mb-3 col-md-12">
                         <label for="">Kelas</label>
                         <div class="mb-3">
                             <select class="default-select form-control wide mb-3" id="kelass" name="kelas_id" required>
@@ -33,9 +33,9 @@
                                 @endforeach
                             </select>
                         </div>
-                    </div>
+                    </div> --}}
                             <input type="text" class="form-control input-rounded" id="walii_Id"
-                                placeholder="Masukkan Alamat" name="wali_id" readonly>
+                                placeholder="Masukkan Alamat" name="wali_id" readonly hidden>
 
                     <div class="mb-3 col-md-12">
                         <label for="">Alamat</label>
